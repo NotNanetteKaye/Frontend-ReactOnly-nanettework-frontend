@@ -8,6 +8,13 @@ const NavBarLayout = styled.div`
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+`
+const NavBarCategories = styled.ul`
+    list-style-type: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
 `
 
 
@@ -17,7 +24,7 @@ const NavBar = () => {
         <div className='logo'>
             <a href='www.youtube.com'>ND</a>
         </div>
-        <ul>
+        <NavBarCategories>
             <li>
                 <Link to='/about'>ABOUT</Link>
             </li>
@@ -27,8 +34,9 @@ const NavBar = () => {
             <li>
                 <Link to='/link'>LINK</Link>
             </li>
-        </ul>
-    </NavBarLayout> );
+        </NavBarCategories>
+    </NavBarLayout> 
+    );
 }
  
 export default NavBar;
