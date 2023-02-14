@@ -10,43 +10,26 @@ const NavBarLayout = styled.div`
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-end;
-`
-const NavBarCategories = styled.ul`
-    list-style-type: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-`
 
-const NavBarLogo = styled.a`
-    text-decoration: none;
-    font-size: 40mm;
-    position: fixed;
 `
-
 
 const NavBar = () => {
     return ( 
-        <div>
-                <NavBarLogo href='www.youtube.com'>ND
-                </NavBarLogo>
-            <NavBarLayout>
-                <NavBarCategories>
-                    <li>
-                        <Link to='/about'>ABOUT</Link>
-                    </li>
-                    <li>
-                        <Link to='/portfolio'>PORTFOLIO</Link>
-                    </li>
-                    <li>
-                        <Link to='/link'>LINK</Link>
-                    </li>
-                </NavBarCategories>
-            </NavBarLayout> 
-        </div>
+        <NavBarLayout>
+            <a href='www.youtube.com' className='navBarLogo'>ND
+            </a>
+            <ul>
+                <li>
+                    <Link to='/about'>ABOUT</Link>
+                </li>
+                <li>
+                    <Link to='/portfolio'>PORTFOLIO</Link>
+                </li>
+                <li>
+                    <Link to='/link'>LINK</Link>
+                </li>
+            </ul>
+        </NavBarLayout> 
     );
 }
  
