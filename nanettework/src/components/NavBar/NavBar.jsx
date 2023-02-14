@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import './NavBar.css';
 
 const NavBarLayout = styled.div`
     background: rgb(231 231 231);
+    text-decoration: none;
     position: fixed;
     width: 100%;
     display: flex;
