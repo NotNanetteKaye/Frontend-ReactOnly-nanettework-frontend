@@ -9,6 +9,9 @@ function App() {
   return (
     <div className='NKDLayout'>
       <NavBar />
+      <div className='headerWithTitle'>
+        <h1>Nanette Kaye Dolera</h1>
+      </div>
       <Footer />
     </div>
   );
