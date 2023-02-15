@@ -7,26 +7,24 @@ const NavBarLayout = styled.div`
     background: rgb(231 231 231);
     position: fixed;
     width: 100%;
+    height: 20mm;
     display: grid;
-
+    grid-template-columns: 20% 70% 10%;
 `
 
 const NavBar = () => {
     return ( 
         <NavBarLayout>
-            <a href='www.youtube.com' className='navBarLogo'>ND
-            </a>
             <ul>
                 <li>
-                    <Link to='/about'>ABOUT</Link>
+                    <Link to='/about'>About</Link>
                 </li>
                 <li>
-                    <Link to='/portfolio'>PORTFOLIO</Link>
-                </li>
-                <li>
-                    <Link to='/link'>LINK</Link>
+                    <Link to='/portfolio'>Portfolio</Link>
                 </li>
             </ul>
+            <a href='www.youtube.com' className='navBarLogo'>NANETTE KAYE DOLERA</a>
+            <h6>social media links over yur</h6>
         </NavBarLayout> 
     );
 }
