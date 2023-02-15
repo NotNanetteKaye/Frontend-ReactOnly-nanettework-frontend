@@ -28,3 +28,16 @@
   grid-template-rows: repeat(2, minmax(300px, auto));
   font-size: 20mm;
 }
+
+.about {
+  grid-area: 'about';
+  background-image: url(./../public/images/naniAbout.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 750px;
+  width: auto;
+  color: white;
+  display: grid;
+  grid-template-rows: repeat(2, minmax(300px, auto));
+  font-size: 20mm;
+}
