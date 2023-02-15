@@ -31,13 +31,24 @@
 
 .about {
   grid-area: 'about';
-  background-image: url(./../public/images/naniAbout.png);
-  background-repeat: no-repeat;
   background-size: cover;
   height: 750px;
   width: auto;
   color: white;
   display: grid;
-  grid-template-rows: repeat(2, minmax(300px, auto));
-  font-size: 20mm;
+  grid-template-columns: repeat(2, minmax(300px, auto));
+  grid-template-areas: 
+  "aboutImage"
+  "aboutWords"
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  color: black;
+  font: bold 1em Georgia, Times, "Times New Roman", serif;
+  background: pink;
 }
