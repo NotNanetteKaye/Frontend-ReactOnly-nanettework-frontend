@@ -1,6 +1,11 @@
 .navBarLogo {
     text-decoration: none;
-    font: bold 10mm Georgia, Times, "Times New Roman", serif;
+    font: bold 7mm Georgia, Times, "Times New Roman", serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
 }
 
 ul {
