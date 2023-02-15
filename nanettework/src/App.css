@@ -5,3 +5,13 @@
   padding: 0;
   box-sizing: inherit;
 }
+
+.NKDLayout {
+  background-color: white;
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "header__imagetext"
+  "about"
+  "footer"
+}

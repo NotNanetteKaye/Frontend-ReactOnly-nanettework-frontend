@@ -7,7 +7,7 @@ import Footer from './components/NavBar/Footer/Footer';
 
 function App() {
   return (
-    <div>
+    <div className='NKDLayout'>
       <NavBar />
       <Footer />
     </div>
