@@ -1,7 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// import { makeStyles } from '@material-ui/core/styles';
+// import { AppBar } from '@material-ui/core';
+// import Toolbar from '@material-ui/core';
+// import Typography from '@material-ui/core';
 import styled from 'styled-components';
 import './NavBar.css';
+
+// watch this tutorial: https://www.youtube.com/watch?v=_N41IcElkZo
 
 const NavBarLayout = styled.div`
     background: rgb(231 231 231);
