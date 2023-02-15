@@ -7,9 +7,7 @@ const NavBarLayout = styled.div`
     background: rgb(231 231 231);
     position: fixed;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: grid;
 
 `
 
