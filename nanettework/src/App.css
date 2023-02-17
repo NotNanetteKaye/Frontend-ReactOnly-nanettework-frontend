@@ -32,21 +32,22 @@
 .about {
   grid-area: 'about';
   background-size: cover;
-  height: 750px;
-  width: auto;
-  color: white;
   display: grid;
   grid-template-columns: repeat(2, minmax(300px, auto));
-  grid-template-areas: 
-  "aboutImage"
-  "aboutWords"
+  background-color: #e7e7e7;
+  height: 800px;
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, auto));
 }
 
 .about .aboutImage {
   grid-area: 'aboutImage';
   background-image: url(./../public/images/naniAboutNoColorBlock.png);
-  height: auto;
-  width: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 10mm;
+  margin-top: 10mm;
 }
 .footer {
   bottom: 0;
@@ -56,5 +57,5 @@
   width: 100%;
   color: black;
   font: bold 1em Georgia, Times, "Times New Roman", serif;
-  background: pink;
+  background-color: #e7e7e7;
 }

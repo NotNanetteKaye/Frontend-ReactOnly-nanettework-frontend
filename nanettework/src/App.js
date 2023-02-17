@@ -15,11 +15,13 @@ function App() {
         </div>
       </div>
       <div className='footer'>
-        <h4>© 2023 Nanette Kaye Dolera. All rights reserved. </h4>
-        <h6>i will probably include social media logos down here like Cara Cara Wireframe</h6>
+        <h4> © 2023 Nanette Kaye Dolera. All rights reserved.  </h4>
       </div>
     </div>
   );
 }
 
 export default App;
+
+
+//         <h4>© 2023 Nanette Kaye Dolera. All rights reserved. </h4>
