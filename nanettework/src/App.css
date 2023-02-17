@@ -35,19 +35,24 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(300px, auto));
   background-color: #e7e7e7;
-  height: 800px;
-  width: auto;
+  height: 750px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, minmax(300px, auto));
 }
 
 .about .aboutImage {
-  grid-area: 'aboutImage';
+  grid-area: 'about';
   background-image: url(./../public/images/naniAboutNoColorBlock.png);
   background-repeat: no-repeat;
   background-size: contain;
   margin-left: 10mm;
   margin-top: 10mm;
+}
+
+.about .aboutWords {
+  grid-area: 'about';
+  width: 90mm;
 }
 .footer {
   bottom: 0;
