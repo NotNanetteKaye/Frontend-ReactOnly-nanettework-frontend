@@ -13,6 +13,10 @@ function App() {
       <div className='about'>
         <div className='aboutImage'>
         </div>
+        <div className='aboutWords'>
+          <h1>ABOUT</h1>
+          <h5>Hello, I am happy you are here! Raised by a healthcare hero mama and sailor papa,  I ultimately knew my life would be dedicated to serving those around me while forging my own unforgettable adventures.</h5>
+        </div>
       </div>
       <div className='footer'>
         <h4> © 2023 Nanette Kaye Dolera. All rights reserved.  </h4>
