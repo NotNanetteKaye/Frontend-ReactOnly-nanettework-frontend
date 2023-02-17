@@ -11,6 +11,8 @@ function App() {
       <div className='headerWithTitle'>
       </div>
       <div className='about'>
+        <div className='aboutImage'>
+        </div>
       </div>
       <div className='footer'>
         <h4>© 2023 Nanette Kaye Dolera. All rights reserved. </h4>

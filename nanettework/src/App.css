@@ -42,6 +42,12 @@
   "aboutWords"
 }
 
+.about .aboutImage {
+  grid-area: 'aboutImage';
+  background-image: url(./../public/images/naniAboutNoColorBlock.png);
+  height: auto;
+  width: auto;
+}
 .footer {
   bottom: 0;
   left: 0;
