@@ -1,6 +1,7 @@
 .navBarLogo {
     text-decoration: none;
     font: bold 7mm Georgia, Times, "Times New Roman", serif;
+    color: #2a2623;
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
@@ -11,6 +12,7 @@
 ul {
     list-style-type: none;
     font-family: bold 'Georgia, 'Times New Roman', Times, serif';
+    color: #2a2623;
     text-decoration: none;
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +21,7 @@ ul {
 
 li a {
     text-decoration: none;
+    color: #2a2623;
     display: flex;
     font-size: 1rem;
     margin-top: 5mm;
