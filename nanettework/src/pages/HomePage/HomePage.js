@@ -21,6 +21,7 @@ const HomePage = () => {
               <button>Resume</button>
             </div>
           </div>
+          <Footer />
         </div>
       );
 }
