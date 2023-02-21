@@ -1,4 +1,8 @@
+// General imports
 import React from 'react';
+
+// Component imports
+import NavBar from '../../components/NavBar/NavBar';
 
 const HomePage = () => {
     return (
