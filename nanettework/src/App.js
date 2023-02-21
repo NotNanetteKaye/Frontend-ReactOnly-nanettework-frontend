@@ -7,8 +7,14 @@ import Footer from './components/NavBar/Footer/Footer';
 
 function App() {
   return (
-    <div>
+    <div className='aboutLayout'>
       <NavBar/>
+      <div className='headerWithTitle'>
+      </div>
+      <div className='bio'>
+      </div>
+      <div className='footerPic'>
+      </div>
       <Footer/>
     </div>
   );
