@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  background-color: #e7e7e7;
 }
 
 .NKDLayout {
@@ -36,7 +37,7 @@
   grid-template-columns: repeat(2, minmax(300px, auto));
   background-color: #e7e7e7;
   height: 750px;
-  width: 100%;
+  width: 110%;
   display: grid;
   grid-template-columns: repeat(2, minmax(300px, auto));
 }
@@ -51,17 +52,24 @@
 }
 
 .about .aboutWords {
-  width: 600px;
-  margin-top: 30mm;
+  width: 450px;
+  margin-top: 50mm;
   margin-left: 20mm;
+  background-color: #e7e7e7;
 }
 
 .about h1 {
-  font-size: 18mm;
+  font: italic bold 12mm Georgia, Times, "Times New Roman", serif;
 }
 
 .about h5 {
   font-size: 8mm;
+  margin-top: 5mm;
+  font: 1em Georgia, Times, "Times New Roman", serif;
+}
+
+.about button {
+  margin-top: 5mm;
 }
 
 .footer {
