@@ -10,7 +10,7 @@ const FooterLayout = styled.div`
     width: 100%;
     color: black;
     font: bold 1em Georgia, Times, "Times New Roman", serif;
-    background: pink;
+    background-color: #e7e7e7;
 `
 
 const Footer = () => {
