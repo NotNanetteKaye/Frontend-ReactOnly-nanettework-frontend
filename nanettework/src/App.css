@@ -51,9 +51,19 @@
 }
 
 .about .aboutWords {
-  grid-area: 'about';
-  width: 90mm;
+  width: 600px;
+  margin-top: 30mm;
+  margin-left: 20mm;
 }
+
+.about h1 {
+  font-size: 18mm;
+}
+
+.about h5 {
+  font-size: 8mm;
+}
+
 .footer {
   bottom: 0;
   left: 0;
