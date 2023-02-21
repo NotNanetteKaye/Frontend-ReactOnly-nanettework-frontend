@@ -63,13 +63,3 @@
     margin-top: 5mm;
 }
   
-.footer {
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    text-align: center;
-    width: 100%;
-    color: black;
-    font: bold 1em Georgia, Times, "Times New Roman", serif;
-    background-color: #e7e7e7;
-}

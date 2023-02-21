@@ -21,9 +21,6 @@ const HomePage = () => {
               <button>Resume</button>
             </div>
           </div>
-          <div className='footer'>
-            <h4> © 2023 Nanette Kaye Dolera. All rights reserved.  </h4>
-          </div>
         </div>
       );
 }
