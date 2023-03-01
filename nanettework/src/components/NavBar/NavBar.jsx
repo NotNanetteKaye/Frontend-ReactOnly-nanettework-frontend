@@ -1,31 +1,38 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar } from '@material-ui/core';
-import Toolbar from '@material-ui/core';
-import Typography from '@material-ui/core';
-import Button from '@material-ui/core';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu'
-import styled from 'styled-components';
-import './NavBar.css';
 
-const NavBarLayout = styled.div`
-    background: rgb(231 231 231);
-    position: fixed;
-    width: 100%;
-    height: 20mm;
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-`
+const useStyles = makeStyles((theme) => ({
+    root: {
+        flexGrow: 1,
+    },
+    menuButton: {
+        marginRight: theme.spacing(2),
+        color: 'black'
+    },
+    title: {
+        flexGrow: 1,
+        color: 'black'
+    },
+    navBarTransparent: {
+        backgroundColor: 'rgb(231 231 231)'
+    },
+    navBarSolid: {
+        backgroundColor: 'rgba(67, 129, 188)'
+    }
+}));
 
-const NavBar = () => {
+export default function NavBar() {
+    const classes  = useStyles();
 
     const [navBackground, setNavBackground] = useState('navBarTransparent')
-    
     const navRef = React.useRef()
     navRef.current = navBackground;
-
     useEffect(() => {
         const handleScroll = () => {
             const show = window.scrollY > 310
@@ -42,19 +49,20 @@ const NavBar = () => {
     }, [])
 
     return ( 
-        <NavBarLayout>
-            <ul>
-                <li>
-                    <Link to='/about'>About</Link>
-                </li>
-                <li>
-                    <Link to='/portfolio'>Portfolio</Link>
-                </li>
-            </ul>
-            <a href='www.youtube.com' className='navBarLogo'>NANETTE KAYE DOLERA</a>
-            <h6>social media links over yur</h6>
-        </NavBarLayout> 
-    );
-}
+        <div className={classes.root}>
+            <AppBar position='fixed' className={classes[navRef.current]} >
+                <Toolbar>
+                    <IconButton className={classes.menuButton}>
+                        <MenuIcon />
+                    </IconButton>
+                    <Typography variant='h6' className={classes.title}>
+                        About
+                    </Typography>
+                    <Button color='black'>Portfolio</Button>
+                </Toolbar>
+            </AppBar>
+        </div>
+    )
+};
  
-export default NavBar;
+
