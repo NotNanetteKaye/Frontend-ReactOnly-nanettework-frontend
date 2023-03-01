@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 
 // Pages Imports
 import HomePage from './pages/HomePage/HomePage';
+import AboutPage from './pages/AboutPage/AboutPage';
 
 // Component Imports
 import NavBar from "./components/NavBar/NavBar";
@@ -15,6 +16,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path='/nanettekayedolera' element={<HomePage />} />
+        <Route path='/about' element={<AboutPage />} />
       </Routes>
       <Footer />
     </div>
