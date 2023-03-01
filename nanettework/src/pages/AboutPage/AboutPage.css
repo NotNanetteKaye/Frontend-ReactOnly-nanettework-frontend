@@ -10,7 +10,7 @@
   .headerWithTitleAbout {
     margin-top: 4mm;
     grid-area: 'headerWithTitleAbout';
-    background-image: url(./../public/images/About1.jpg);
+    background-image: url(../../../public/images/About1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 750px;
@@ -36,7 +36,7 @@
   .footerPic {
     margin-top: 4mm;
     grid-area: 'headerWithTitleAbout';
-    background-image: url(./../public/images/About2.JPG);
+    background-image: url(../../../public/images/About2.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     height: 750px;
