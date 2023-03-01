@@ -3,6 +3,7 @@ import React from 'react';
 import '../HomePage/HomePage.css'
 
 // Component imports
+import Footer from '../../components/Footer/Footer.js'
 
 const HomePage = () => {
     return (
@@ -20,6 +21,7 @@ const HomePage = () => {
               <button>Resume</button>
             </div>
           </div>
+          <Footer />
         </div>
       );
 }
