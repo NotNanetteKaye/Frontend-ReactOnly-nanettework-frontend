@@ -1,0 +1,49 @@
+.aboutLayout {
+    background-color: white;
+    display: grid;
+    grid-template-areas: 
+    'headerWithTitleAbout'
+    'bio'
+    'footerPic'
+  }
+  
+  .headerWithTitleAbout {
+    margin-top: 4mm;
+    grid-area: 'headerWithTitleAbout';
+    background-image: url(./../public/images/About1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    width: auto;
+    color: white;
+    display: grid;
+    grid-template-rows: repeat(2, minmax(300px, auto));
+    font-size: 20mm;
+  }
+  
+  .bio {
+    grid-area: 'bio';
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, auto));
+    background-color: #e7e7e7;
+    height: 750px;
+    width: 110%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, auto));
+  }
+  
+  .footerPic {
+    margin-top: 4mm;
+    grid-area: 'headerWithTitleAbout';
+    background-image: url(./../public/images/About2.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    width: auto;
+    color: white;
+    display: grid;
+    grid-template-rows: repeat(2, minmax(300px, auto));
+    font-size: 20mm;
+  }
+  
