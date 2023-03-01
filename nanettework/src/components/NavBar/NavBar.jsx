@@ -22,6 +22,10 @@ const NavBarLayout = styled.div`
 const NavBar = () => {
 
     const [navBackground, setNavBackground] = useState('navBarTransparent')
+    
+    const navRef = React.useRef()
+    navRef.current = navBackground;
+    
     return ( 
         <NavBarLayout>
             <ul>
