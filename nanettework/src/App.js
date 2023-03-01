@@ -9,7 +9,7 @@ function App() {
   return (
     <div className='aboutLayout'>
       <NavBar/>
-      <div className='headerWithTitle'>
+      <div className='headerWithTitleAbout'>
       </div>
       <div className='bio'>
       </div>
