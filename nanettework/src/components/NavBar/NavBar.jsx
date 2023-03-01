@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar } from '@material-ui/core';
@@ -25,7 +25,22 @@ const NavBar = () => {
     
     const navRef = React.useRef()
     navRef.current = navBackground;
-    
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const show = window.scrollY > 310
+            if (show) {
+                setNavBackground('navBarSolid')
+            } else {
+                setNavBackground('navBarTransparent')
+            }
+        }
+        document.addEventListener('scroll', handleScroll)
+        return () => {
+            document.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
+
     return ( 
         <NavBarLayout>
             <ul>
