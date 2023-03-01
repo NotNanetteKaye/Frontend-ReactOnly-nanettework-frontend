@@ -54,6 +54,7 @@ export default function NavBar() {
                 <Toolbar>
                     <Typography variant='h6' className={classes.title}>
                         About
+                        Portfolio
                     </Typography>
                     <Button color='black'>Portfolio</Button>
                 </Toolbar>
