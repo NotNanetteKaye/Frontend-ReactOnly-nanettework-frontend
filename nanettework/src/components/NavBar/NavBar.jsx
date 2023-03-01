@@ -66,3 +66,4 @@ export default function NavBar() {
 };
  
 
+// video tutorial followed: https://www.youtube.com/watch?v=_N41IcElkZo
