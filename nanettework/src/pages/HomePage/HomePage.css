@@ -10,7 +10,7 @@
 .headerWithTitle{
     margin-top: 4mm;
     grid-area: 'headerWithTitle';
-    background-image: url(./../public/images/nanifrontpic.jpg);
+    background-image: url(../../../public/images/nanifrontpic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 750px;
@@ -35,7 +35,7 @@
   
 .about .aboutImage {
     grid-area: 'about';
-    background-image: url(./../public/images/naniAboutNoColorBlock.png);
+    background-image: url(../../../public/images/naniAboutNoColorBlock.png);
     background-repeat: no-repeat;
     background-size: contain;
     margin-left: 10mm;

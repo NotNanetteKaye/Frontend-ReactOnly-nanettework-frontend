@@ -1,13 +1,12 @@
 // General imports
 import React from 'react';
+import '../HomePage/HomePage.css'
 
 // Component imports
-import NavBar from '../../components/NavBar/NavBar';
 
 const HomePage = () => {
     return (
         <div className='NKDLayout'>
-          <NavBar />
           <div className='headerWithTitle'>
           </div>
           <div className='about'>
@@ -21,7 +20,6 @@ const HomePage = () => {
               <button>Resume</button>
             </div>
           </div>
-          <Footer />
         </div>
       );
 }
