@@ -35,7 +35,7 @@ export default function NavBar() {
     navRef.current = navBackground;
     useEffect(() => {
         const handleScroll = () => {
-            const show = window.scrollY > 310
+            const show = window.scrollY > 100
             if (show) {
                 setNavBackground('navBarSolid')
             } else {
@@ -52,9 +52,6 @@ export default function NavBar() {
         <div className={classes.root}>
             <AppBar position='fixed' className={classes[navRef.current]} >
                 <Toolbar>
-                    <IconButton className={classes.menuButton}>
-                        <MenuIcon />
-                    </IconButton>
                     <Typography variant='h6' className={classes.title}>
                         About
                     </Typography>
