@@ -20,10 +20,10 @@ const useStyles = makeStyles((theme) => ({
         color: 'black'
     },
     navBarTransparent: {
-        backgroundColor: 'rgb(231 231 231)'
+        backgroundColor: 'pink'
     },
     navBarSolid: {
-        backgroundColor: 'rgba(67, 129, 188)'
+        backgroundColor: 'red'
     }
 }));
 
