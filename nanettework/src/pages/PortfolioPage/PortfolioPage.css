@@ -1,0 +1,9 @@
+.portfolioPageLayout {
+    background-color: white;
+    display: grid;
+    grid-template-areas: 
+    "portfolioHeaderTitle"
+    "codingScene"
+    "videographyScene"
+    "photographyScene"
+}
