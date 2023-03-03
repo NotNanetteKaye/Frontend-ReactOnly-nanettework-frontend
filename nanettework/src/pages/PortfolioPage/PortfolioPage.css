@@ -10,4 +10,21 @@
 
 .portfolioHeaderTitle {
     margin-top: 18mm;
+    width: 100%;
+    background-color: #e7e7e7;
+}
+
+.codingScene {
+    width: 100%;
+    background-color: #e7e7e7;
+}
+
+.videographyScene {
+    width: 100%;
+    background-color: #e7e7e7;
+}
+
+.photographyScene {
+    width: 100%;
+    background-color: #e7e7e7;
 }
