@@ -74,12 +74,14 @@ export default function NavBar() {
                     </Button>
                     <ul>
                         <li>
-                            <a href='https://www.linkedin.com/in/nanettekayedolera/'>
-                                <FaLinkedin size={26} color='black' />
+                            <a href='https://www.linkedin.com/in/nanettekayedolera/'
+                                className=''>
+                                <FaLinkedin size={26} color='black'/>
                             </a>
                         </li>
                         <li>
-                            <a href='https://github.com/NotNanetteKaye'>
+                            <a href='https://github.com/NotNanetteKaye'
+                                className=''>
                                 <FaGithub size={26} color='black'/>
                             </a>
                         </li>
