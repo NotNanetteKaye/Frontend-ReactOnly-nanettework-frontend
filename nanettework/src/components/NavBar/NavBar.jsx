@@ -24,9 +24,10 @@ const useStyles = makeStyles((theme) => ({
         flexWrap: 'wrap',
         justifyContent: 'space-around',
         fontWeight: 'bold',
-        fontSize: '30px',
+        fontSize: '35px',
         textShadow: '2px 2px 53px #e7e7e7',
         backgroundColor: 'transparent',
+        textDecoration: 'none',
     },
     icons: {
         flexGrow: .02,
@@ -73,9 +74,9 @@ export default function NavBar() {
                 <Toolbar>
                     <Button onClick={() => navigate('/portfolio')}>Portfolio</Button>
                     <Button onClick={() => navigate('/about')}>About</Button>
-                    <Button className={classes.title} onClick={() => navigate('/nanettekayedolera')}>
+                    <a className={classes.title} href='http://localhost:3000/nanettekayedolera'>
                         NANETTE KAYE DOLERA
-                    </Button>
+                    </a>
                     <ul className={classes.icons}>
                         <li>
                             <a href='https://www.linkedin.com/in/nanettekayedolera/'
