@@ -54,14 +54,11 @@ export default function NavBar() {
         <div className={classes.root}>
             <AppBar position='fixed' className={classes[navRef.current]} >
                 <Toolbar>
-                    <IconButton className={classes.menuButton}>
-                        <MenuIcon />
-                    </IconButton>
-                    <Typography variant='h6' className={classes.title}>
-                        About
-                        Portfolio
-                    </Typography>
                     <Button color='black'>Portfolio</Button>
+                    <Button color='black'>About</Button>
+                    <Typography variant='h4' className={classes.title}>
+                        NANETTE KAYE DOLERA
+                    </Typography>
                 </Toolbar>
             </AppBar>
         </div>
