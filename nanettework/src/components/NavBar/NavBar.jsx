@@ -21,10 +21,10 @@ const useStyles = makeStyles((theme) => ({
         color: 'black'
     },
     appBarTransparent: {
-        backgroundColor: 'rgba(255, 255, 255 / 0%)'
+        backgroundColor: 'rgba(255, 255, 255, 0)'
     },
     appBarSolid: {
-        backgroundColor: 'rgba(67, 129, 168,0.5)'
+        backgroundColor: 'rgba(231, 231, 231, 1)'
     }
 }));
 
@@ -39,9 +39,9 @@ export default function NavBar() {
         const handleScroll = () => {
             const show = window.scrollY > 600
             if (show) {
-                setNavBackground('appBarTransparent')
-            } else {
                 setNavBackground('appBarSolid')
+            } else {
+                setNavBackground('appBarTransparent')
             }
         }
         document.addEventListener('scroll', handleScroll)
