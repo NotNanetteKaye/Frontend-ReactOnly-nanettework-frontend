@@ -4,6 +4,7 @@ import AppBar from '@material-ui/core/AppBar/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import { useNavigate } from 'react-router-dom';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -71,8 +72,18 @@ export default function NavBar() {
                     <Button className={classes.title} onClick={() => navigate('/nanettekayedolera')}>
                         NANETTE KAYE DOLERA
                     </Button>
-                    <img src= '../../../public/social_media/LinkedIn.png' alt='LinkedIn logo' className={classes.logo} />
-                    <img src= '../../../public/social_media/LinkedIn.png' alt='GitHub logo' className={classes.logo} />
+                    <ul>
+                        <li>
+                            <a href='https://www.linkedin.com/in/nanettekayedolera/'>
+                                <FaLinkedin size={26} color='black' />
+                            </a>
+                        </li>
+                        <li>
+                            <a href='https://github.com/NotNanetteKaye'>
+                                <FaGithub size={26} color='black'/>
+                            </a>
+                        </li>
+                    </ul>
                 </Toolbar>
             </AppBar>
         </div>
