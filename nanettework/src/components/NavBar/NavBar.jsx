@@ -10,9 +10,6 @@ const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
     },
-    logo: {
-        maxWidth: 160,
-    },
     menuButton: {
         marginRight: theme.spacing(2),
         color: 'black',
@@ -30,6 +27,13 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '30px',
         textShadow: '2px 2px 53px #e7e7e7',
         backgroundColor: 'transparent',
+    },
+    icons: {
+        flexGrow: .02,
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'space-between',
     },
     appBarTransparent: {
         backgroundColor: 'rgba(255, 255, 255, 0)'
@@ -72,7 +76,7 @@ export default function NavBar() {
                     <Button className={classes.title} onClick={() => navigate('/nanettekayedolera')}>
                         NANETTE KAYE DOLERA
                     </Button>
-                    <ul>
+                    <ul className={classes.icons}>
                         <li>
                             <a href='https://www.linkedin.com/in/nanettekayedolera/'
                                 className=''>
