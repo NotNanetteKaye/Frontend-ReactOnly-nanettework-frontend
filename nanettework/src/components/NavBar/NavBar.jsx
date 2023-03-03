@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar } from '@material-ui/core';
+import AppBar from '@material-ui/core/AppBar/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu'
+import { Icon } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -19,27 +20,28 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         color: 'black'
     },
-    navBarTransparent: {
-        backgroundColor: 'pink'
+    appBarTransparent: {
+        backgroundColor: 'rgba(255, 255, 255 / 0%)'
     },
-    navBarSolid: {
-        backgroundColor: 'red'
+    appBarSolid: {
+        backgroundColor: 'rgba(67, 129, 168,0.5)'
     }
 }));
 
 export default function NavBar() {
     const classes  = useStyles();
+    const [navBackground, setNavBackground] = useState('appBarTransparent')
 
-    const [navBackground, setNavBackground] = useState('navBarTransparent')
     const navRef = React.useRef()
     navRef.current = navBackground;
+
     useEffect(() => {
         const handleScroll = () => {
-            const show = window.scrollY > 100
+            const show = window.scrollY > 600
             if (show) {
-                setNavBackground('navBarSolid')
+                setNavBackground('appBarTransparent')
             } else {
-                setNavBackground('navBarTransparent')
+                setNavBackground('appBarSolid')
             }
         }
         document.addEventListener('scroll', handleScroll)
@@ -52,6 +54,9 @@ export default function NavBar() {
         <div className={classes.root}>
             <AppBar position='fixed' className={classes[navRef.current]} >
                 <Toolbar>
+                    <IconButton className={classes.menuButton}>
+                        <MenuIcon />
+                    </IconButton>
                     <Typography variant='h6' className={classes.title}>
                         About
                         Portfolio

@@ -8,8 +8,8 @@ import AboutPage from './pages/AboutPage/AboutPage';
 import PortfolioPage from './pages/PortfolioPage/PortfolioPage';
 
 // Component Imports
-import NavBar from "./components/NavBar/NavBar";
 import Footer from './components/Footer/Footer';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
