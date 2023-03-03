@@ -2,33 +2,45 @@ import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu'
-import { Icon } from '@material-ui/core';
+import { useNavigate } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
     },
+    logo: {
+        maxWidth: 160,
+    },
     menuButton: {
         marginRight: theme.spacing(2),
-        color: 'black'
+        color: 'black',
+        fontFamily: 'Georgia, Times, "Times New Roman", serif'
     },
     title: {
         flexGrow: 1,
-        color: 'black'
+        color: 'black',
+        fontFamily: 'Georgia, Times, "Times New Roman", serif',
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        justifyContent: 'space-around',
+        fontWeight: 'bold',
+        fontSize: '30px',
+        textShadow: '2px 2px 53px #e7e7e7',
+        backgroundColor: 'transparent',
     },
     appBarTransparent: {
         backgroundColor: 'rgba(255, 255, 255, 0)'
     },
     appBarSolid: {
-        backgroundColor: 'rgba(231, 231, 231, 1)'
+        backgroundColor: 'rgba(231, 231, 231, 1)',
+        color: 'black',
     }
 }));
 
 export default function NavBar() {
+    const navigate = useNavigate();
     const classes  = useStyles();
     const [navBackground, setNavBackground] = useState('appBarTransparent')
 
@@ -52,13 +64,15 @@ export default function NavBar() {
 
     return ( 
         <div className={classes.root}>
-            <AppBar position='fixed' className={classes[navRef.current]} >
+            <AppBar position='fixed' className={classes[navRef.current]} elevation={0} >
                 <Toolbar>
-                    <Button color='black'>Portfolio</Button>
-                    <Button color='black'>About</Button>
-                    <Typography variant='h4' className={classes.title}>
+                    <Button onClick={() => navigate('/portfolio')}>Portfolio</Button>
+                    <Button onClick={() => navigate('/about')}>About</Button>
+                    <Button className={classes.title} onClick={() => navigate('/nanettekayedolera')}>
                         NANETTE KAYE DOLERA
-                    </Typography>
+                    </Button>
+                    <img src= '../../../public/social_media/LinkedIn.png' alt='LinkedIn logo' className={classes.logo} />
+                    <img src= '../../../public/social_media/LinkedIn.png' alt='GitHub logo' className={classes.logo} />
                 </Toolbar>
             </AppBar>
         </div>
