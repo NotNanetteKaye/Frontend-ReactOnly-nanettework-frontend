@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
         flexWrap: 'wrap',
         justifyContent: 'space-around',
         fontWeight: 'bold',
-        fontSize: '35px',
+        fontSize: '32px',
         textShadow: '2px 2px 53px #e7e7e7',
         backgroundColor: 'transparent',
         textDecoration: 'none',
@@ -99,3 +99,4 @@ export default function NavBar() {
  
 
 // video tutorial followed: https://www.youtube.com/watch?v=_N41IcElkZo
+// 🟩 need to go back and change link to <a> title tag when deploying
