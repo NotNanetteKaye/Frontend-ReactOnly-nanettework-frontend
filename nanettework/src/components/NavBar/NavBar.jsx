@@ -9,6 +9,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
+        height: '70px',
     },
     menuButton: {
         marginRight: theme.spacing(2),
@@ -37,11 +38,13 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'space-between',
     },
     appBarTransparent: {
-        backgroundColor: 'rgba(255, 255, 255, 0)'
+        backgroundColor: 'rgba(255, 255, 255, 0)',
+        height: '70px',
     },
     appBarSolid: {
         backgroundColor: 'rgba(231, 231, 231, 1)',
         color: 'black',
+        height: '70px',
     }
 }));
 

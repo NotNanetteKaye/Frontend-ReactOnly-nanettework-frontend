@@ -8,12 +8,12 @@
 }
   
 .headerWithTitle{
-    margin-top: -13mm;
+    margin-top: -20mm;
     grid-area: 'headerWithTitle';
     background-image: url(../../../public/images/nanifrontpic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 780px;
+    height: 740px;
     width: auto;
     color: white;
     display: grid;
