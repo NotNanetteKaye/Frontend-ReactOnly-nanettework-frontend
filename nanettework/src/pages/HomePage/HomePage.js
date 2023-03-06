@@ -21,7 +21,7 @@ const HomePage = () => {
                 <a href='https://drive.google.com/file/d/10Ghf2zFESwT6ql9p6OKEas-PA50w8n3d/view'
               target="_blank"
               rel="noreferrer"
-              style={{borderRadius: '2mm'}}>
+              style={{borderRadius: '2mm', color: 'black'}}>
                resume!
                 </a>
               </div>
