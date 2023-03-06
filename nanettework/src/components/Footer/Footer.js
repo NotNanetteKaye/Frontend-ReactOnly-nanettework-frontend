@@ -15,7 +15,7 @@ const FooterLayout = styled.div`
 const Footer = () => {
     return ( 
         <FooterLayout>
-            <h4>© 2023 Nanette Kaye Dolera. All rights reserved. </h4>
+            <h4>© 2023 NANETTE KAYE DOLERA </h4>
         </FooterLayout>
      );
 }
