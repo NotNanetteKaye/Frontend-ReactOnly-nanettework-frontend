@@ -8,7 +8,7 @@
   }
   
   .headerWithTitleAbout {
-    margin-top: 4mm;
+    margin-top: -18mm;
     grid-area: 'headerWithTitleAbout';
     background-image: url(../../../public/images/About1.jpg);
     background-repeat: no-repeat;
@@ -34,7 +34,6 @@
   }
   
   .footerPic {
-    margin-top: 4mm;
     grid-area: 'headerWithTitleAbout';
     background-image: url(../../../public/images/About2.JPG);
     background-repeat: no-repeat;
