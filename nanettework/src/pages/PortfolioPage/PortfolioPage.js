@@ -1,4 +1,7 @@
-import React, { Component } from 'react';
+// Image imports 
+import darlingDreams from '../../coding_images/capstoneImage.png';
+
+import React from 'react';
 import Carousel from 'react-elastic-carousel';
 import { FaReact, FaPython, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 import { SiDjango, SiJavascript } from 'react-icons/si';
@@ -23,7 +26,7 @@ const PortfolioPage = () => {
                 rel="noreferrer"
             >
                     <div>
-                            <img src={photo} alt={title} />
+                            <img src={photo} alt={title} width='500mm'/>
                             <div>
                                 <h1>{title}</h1>
                                 <p>{description}</p>
@@ -31,10 +34,7 @@ const PortfolioPage = () => {
                     </div>
             </a>
         );
-    };
-    
-    
-    
+    }; 
 
     return(
         <div className='portfolioPageLayout'>
@@ -54,6 +54,12 @@ const PortfolioPage = () => {
             </div>
             <div className='codingScene'>
                 <h2>CODING PROJECTS</h2>
+                <div>
+                    <Project title='Darling Dreams'
+                    description='Find black/brown artists & entrepreneurs in Texas'
+                    link='https://github.com/NotNanetteKaye/capstone2022'
+                    photo= {darlingDreams} />
+                </div>
             </div>
             <div className='videographyScene'>
                 <h2>VIDEOGRAPHY</h2>
