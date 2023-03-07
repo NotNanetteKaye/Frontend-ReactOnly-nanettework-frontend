@@ -1,5 +1,6 @@
 // Image imports 
 import darlingDreams from '../../coding_images/capstoneImage.png';
+import youtubeClone from '../../coding_images/youtubeclone.png';
 
 import React from 'react';
 import Carousel from 'react-elastic-carousel';
@@ -59,6 +60,10 @@ const PortfolioPage = () => {
                     description='Find black/brown artists & entrepreneurs in Texas'
                     link='https://github.com/NotNanetteKaye/capstone2022'
                     photo= {darlingDreams} />
+                    <Project title='Youtube Minus the Ads'
+                    description='A video player full-stack application utilizing the YoutubeAPI with user ability to leave comments'
+                    link='https://github.com/NotNanetteKaye/youtube-clone'
+                    photo = {youtubeClone} />
                 </div>
             </div>
             <div className='videographyScene'>
