@@ -18,6 +18,13 @@
     background-color: #e7e7e7;
 }
 
+.codingScene .projectDisplay {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .videographyScene {
     width: 100%;
     background-color: #e7e7e7;

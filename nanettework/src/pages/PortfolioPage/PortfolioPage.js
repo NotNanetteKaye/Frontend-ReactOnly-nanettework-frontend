@@ -55,7 +55,7 @@ const PortfolioPage = () => {
             </div>
             <div className='codingScene'>
                 <h2>CODING PROJECTS</h2>
-                <div>
+                <div className='projectDisplay'>
                     <Project title='Darling Dreams'
                     description='Find black/brown artists & entrepreneurs in Texas'
                     link='https://github.com/NotNanetteKaye/capstone2022'
