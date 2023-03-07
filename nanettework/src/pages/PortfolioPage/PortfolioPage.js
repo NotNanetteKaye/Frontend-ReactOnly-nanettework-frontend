@@ -5,13 +5,35 @@ import { SiDjango, SiJavascript } from 'react-icons/si';
 import 'react-multi-carousel/lib/styles.css'
 import '../PortfolioPage/PortfolioPage.css'
 
+// carousel tutorial to follow: https://www.youtube.com/watch?v=R5O5lLIph9Y
+// carousel-elastic: https://www.npmjs.com/package/react-elastic-carousel
 
 const PortfolioPage = () => {
     const carouselIcons = [
         { width: 1, itemsToShow: 1},
         { width: 1, itemsToShow: 2},
         { width: 1, itemsToShow: 3},
-      ]
+    ]
+
+    const Project = ({ title, description, link, photo }) => {
+        return (
+            < a
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+            >
+                    <div>
+                            <img src={photo} alt={title} />
+                            <div>
+                                <h1>{title}</h1>
+                                <p>{description}</p>
+                            </div>
+                    </div>
+            </a>
+        );
+    };
+    
+    
     
 
     return(
