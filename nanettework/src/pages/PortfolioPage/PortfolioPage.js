@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from 'react-multi-carousel';
-import { FaReact } from 'react-icons/fa'
+import { FaReact, FaPython, FaHtml5, FaCss3Alt } from 'react-icons/fa';
+import { SiDjango, SiJavascript } from 'react-icons/si';
 import 'react-multi-carousel/lib/styles.css'
 import '../PortfolioPage/PortfolioPage.css'
 
@@ -34,12 +35,33 @@ const PortfolioPage = () => {
         <div className='portfolioPageLayout'>
             <div className='portfolioHeaderTitle'>
                 <h1>PORTFOLIO</h1>
-                <div className='carouselSample'>
-                    <CarouselComponent>
-
-                    </CarouselComponent>
+                <div className="w-full relative h-32">
+                    <Carousel
+                        infinite={true}
+                        responsive={responsive}
+                    >
+                        <div style={{display:'flex', flex:'row', justifyContent:'center'}}>
+                            <div className='carouselComponents'>
+                                <FaReact size={100} />
+                            </div>
+                            <div className='carouselComponents'>
+                                <FaPython size={100} />
+                            </div>
+                            <div className='carouselComponents'>
+                                <FaHtml5 size={100}/>
+                            </div>
+                            <div className='carouselComponents'>
+                                <FaCss3Alt size={100} />
+                            </div>
+                            <div className='carouselComponents'>
+                                <SiDjango size={100} />
+                            </div>
+                            <div className='carouselComponents'>
+                                <SiJavascript size={100} />
+                            </div>
+                        </div>
+                    </Carousel>
                 </div>
-                <FaReact size={100} />
             </div>
             <div className='codingScene'>
                 <h2>CODING PROJECTS</h2>
