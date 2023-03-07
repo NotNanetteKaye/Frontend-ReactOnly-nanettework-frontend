@@ -38,8 +38,8 @@ const PortfolioPage = () => {
                 rel="noreferrer"
             >
                     <div className='individualProjects'>
-                            <img src={photo} alt={title} width='500mm'/>
-                            <div>
+                            <img src={photo} alt={title} width='300mm'/>
+                            <div className='projectDetails'>
                                 <h1>{title}</h1>
                                 <p>{description}</p>
                             </div>
