@@ -2,15 +2,20 @@
 import darlingDreams from '../../coding_images/capstoneImage.png';
 import youtubeClone from '../../coding_images/youtubeclone.png';
 
+// .CSS imports
+import 'react-multi-carousel/lib/styles.css';
+import '../PortfolioPage/PortfolioPage.css';
+
 import React from 'react';
 import Carousel from 'react-elastic-carousel';
 import { FaReact, FaPython, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 import { SiDjango, SiJavascript } from 'react-icons/si';
-import 'react-multi-carousel/lib/styles.css'
-import '../PortfolioPage/PortfolioPage.css'
+import { motion } from "framer-motion";
+
 
 // carousel tutorial to follow: https://www.youtube.com/watch?v=R5O5lLIph9Y
 // carousel-elastic: https://www.npmjs.com/package/react-elastic-carousel
+
 
 const PortfolioPage = () => {
     const carouselIcons = [
@@ -19,14 +24,20 @@ const PortfolioPage = () => {
         { width: 1, itemsToShow: 3},
     ]
 
+    const projectVariant = {
+        hidden: { opacity: 0, scale: 0.8 },
+        visible: { opacity: 1, scale: 1 },
+    };
+
     const Project = ({ title, description, link, photo }) => {
         return (
+            <motion.div variants={projectVariant}>
             < a
                 href={link}
                 target="_blank"
                 rel="noreferrer"
             >
-                    <div>
+                    <div className='individualProjects'>
                             <img src={photo} alt={title} width='500mm'/>
                             <div>
                                 <h1>{title}</h1>
@@ -34,6 +45,7 @@ const PortfolioPage = () => {
                             </div>
                     </div>
             </a>
+            </motion.div>
         );
     }; 
 

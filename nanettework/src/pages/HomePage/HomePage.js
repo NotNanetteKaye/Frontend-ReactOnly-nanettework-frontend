@@ -1,6 +1,7 @@
 // General imports
 import React from 'react';
 import '../HomePage/HomePage.css';
+import Footer from '../../components/Footer/Footer'
 
 // Component imports
 
@@ -27,6 +28,7 @@ const HomePage = () => {
               </div>
             </div>
           </div>
+          <Footer/>
         </div>
       );
 }
