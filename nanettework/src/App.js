@@ -8,7 +8,6 @@ import AboutPage from './pages/AboutPage/AboutPage';
 import PortfolioPage from './pages/PortfolioPage/PortfolioPage';
 
 // Component Imports
-import Footer from './components/Footer/Footer';
 import NavBar from './components/NavBar/NavBar';
 
 function App() {
