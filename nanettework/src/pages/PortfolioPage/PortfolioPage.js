@@ -1,8 +1,8 @@
-// Image imports 
+ // Image Imports
 import darlingDreams from '../../coding_images/capstoneImage.png';
 import youtubeClone from '../../coding_images/youtubeclone.png';
 
-// .CSS imports
+// CSS Imports
 import 'react-multi-carousel/lib/styles.css';
 import '../PortfolioPage/PortfolioPage.css';
 
@@ -16,39 +16,40 @@ import { motion } from "framer-motion";
 // carousel tutorial to follow: https://www.youtube.com/watch?v=R5O5lLIph9Y
 // carousel-elastic: https://www.npmjs.com/package/react-elastic-carousel
 
+const carouselIcons = [
+    { width: 1, itemsToShow: 1},
+    { width: 1, itemsToShow: 2},
+    { width: 1, itemsToShow: 3},
+]
+
+const projectVariant = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1, transition: {type: 'spring'}},
+};
+
+const Project = ({ title, description, link, photo }) => {
+    return (
+        <motion.div variants={projectVariant}
+        initial= 'hidden'
+        animate='visible'>
+        < a
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+        >
+                <div className='individualProjects'>
+                        <img src={photo} alt={title} width='300mm'/>
+                        <div className='projectDetails'>
+                            <h1>{title}</h1>
+                            <p>{description}</p>
+                        </div>
+                </div>
+        </a>
+        </motion.div>
+    );
+}; 
 
 const PortfolioPage = () => {
-    const carouselIcons = [
-        { width: 1, itemsToShow: 1},
-        { width: 1, itemsToShow: 2},
-        { width: 1, itemsToShow: 3},
-    ]
-
-    const projectVariant = {
-        hidden: { opacity: 0, scale: 0.8 },
-        visible: { opacity: 1, scale: 1 },
-    };
-
-    const Project = ({ title, description, link, photo }) => {
-        return (
-            <motion.div variants={projectVariant}>
-            < a
-                href={link}
-                target="_blank"
-                rel="noreferrer"
-            >
-                    <div className='individualProjects'>
-                            <img src={photo} alt={title} width='300mm'/>
-                            <div className='projectDetails'>
-                                <h1>{title}</h1>
-                                <p>{description}</p>
-                            </div>
-                    </div>
-            </a>
-            </motion.div>
-        );
-    }; 
-
     return(
         <div className='portfolioPageLayout'>
             <div className='portfolioHeaderTitle'>
@@ -68,14 +69,16 @@ const PortfolioPage = () => {
             <div className='codingScene'>
                 <h2>CODING PROJECTS</h2>
                 <div className='projectDisplay'>
-                    <Project title='Darling Dreams'
-                    description='Find black/brown artists & entrepreneurs in Texas'
-                    link='https://github.com/NotNanetteKaye/capstone2022'
-                    photo= {darlingDreams} />
-                    <Project title='Youtube Minus the Ads'
-                    description='A video player full-stack application utilizing the YoutubeAPI with user ability to leave comments'
-                    link='https://github.com/NotNanetteKaye/youtube-clone'
-                    photo = {youtubeClone} />
+                    <motion.div>
+                        <Project title='Darling Dreams'
+                        description='Find black/brown artists & entrepreneurs in Texas'
+                        link='https://github.com/NotNanetteKaye/capstone2022'
+                        photo= {darlingDreams} />
+                        <Project title='Youtube Minus the Ads'
+                        description='A video player full-stack application utilizing the YoutubeAPI with user ability to leave comments'
+                        link='https://github.com/NotNanetteKaye/youtube-clone'
+                        photo = {youtubeClone} />
+                    </motion.div>
                 </div>
             </div>
             <div className='videographyScene'>
