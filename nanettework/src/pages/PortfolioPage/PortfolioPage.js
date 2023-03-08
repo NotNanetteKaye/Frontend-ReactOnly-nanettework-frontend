@@ -18,12 +18,6 @@ import { motion } from "framer-motion";
 // carousel tutorial to follow: https://www.youtube.com/watch?v=R5O5lLIph9Y
 // carousel-elastic: https://www.npmjs.com/package/react-elastic-carousel
 
-const carouselIcons = [
-    { width: 1, itemsToShow: 1},
-    { width: 1, itemsToShow: 2},
-    { width: 1, itemsToShow: 3},
-]
-
 const projectVariant = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { opacity: 1, scale: 1, transition: {type: 'spring'}},
@@ -42,7 +36,7 @@ const Project = ({ title, description, link, photo }) => {
                 <div className='individualProjects'>
                     <img src={photo} alt={title} width='%' height='50%'/>
                     <div className='individualProjectDetails'>
-                        <h1>{title}</h1>
+                        <h3>{title}</h3>
                          <p>{description}</p>
                     </div>
                 </div>
@@ -57,15 +51,12 @@ const PortfolioPage = () => {
             <div className='portfolioHeaderTitle'>
                 <h1>PORTFOLIO</h1>
                 <div className='Carousel'>
-                    <Carousel breakPoints={carouselIcons}
-                    >
                         <FaReact size={100} />
                         <FaPython size={100} />
                         <FaHtml5 size={100}/>
                         <FaCss3Alt size={100} />
                         <SiDjango size={100} />
                         <SiJavascript size={100} />
-                    </Carousel>
                 </div>
             </div>
             <div className='codingScene'>

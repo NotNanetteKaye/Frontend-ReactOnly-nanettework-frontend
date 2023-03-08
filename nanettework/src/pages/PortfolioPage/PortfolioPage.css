@@ -48,6 +48,42 @@
     object-fit: fill;
     transition: 0.8s ease-in-out;
 }
+
+.individualProjects .individualProjectsDetails {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.7rem;
+    transition: 0.8s ease-in-out;
+    border-left: 1px solid #00ffff;
+}
+
+.individualProjectsDetails h3 {
+    font-size: 2.5rem;
+    background: linear-gradient(to right, #00FFFF 0%, #d40071 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.individualProjectsDetails p {
+    font-size: 1.2rem;
+}
+
+.individualProjects:hover .individualProjectsDetails {
+    right: 0;
+}
+
+
 .videographyScene {
     width: 100%;
     background-color: #e7e7e7;
