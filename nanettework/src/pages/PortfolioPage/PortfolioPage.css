@@ -25,21 +25,29 @@
     justify-content: space-around;
 }
 
-.projectDetails {
+.individualProjects {
     border-radius: 25px; 
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 550px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
     background-color: pink;
     opacity: 80%;
+    border: 4px solid #00ffff;
+    box-shadow: 0 0 10px #00ffff;
     /* md:opacity-0 
     group-hover:h-full 
     group-hover:opacity-80 duration-500 */
 }
 
+.individualProjects img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transition: 0.8s ease-in-out;
+}
 .videographyScene {
     width: 100%;
     background-color: #e7e7e7;

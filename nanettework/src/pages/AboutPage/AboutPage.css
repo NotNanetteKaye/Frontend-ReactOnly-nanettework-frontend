@@ -35,10 +35,10 @@
   
   .footerPic {
     grid-area: 'headerWithTitleAbout';
-    background-image: url(../../../public/images/About2.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     height: 750px;
+    margin-top: -20mm;
     width: auto;
     color: white;
     display: grid;

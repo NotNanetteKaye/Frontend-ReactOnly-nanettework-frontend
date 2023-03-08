@@ -40,11 +40,11 @@ const Project = ({ title, description, link, photo }) => {
             rel="noreferrer"
         >
                 <div className='individualProjects'>
-                        <img src={photo} alt={title} width='300mm'/>
-                        <div className='projectDetails'>
-                            <h1>{title}</h1>
-                            <p>{description}</p>
-                        </div>
+                    <img src={photo} alt={title} width='%' height='50%'/>
+                    <div className='individualProjectDetails'>
+                        <h1>{title}</h1>
+                         <p>{description}</p>
+                    </div>
                 </div>
         </a>
         </motion.div>
@@ -85,16 +85,18 @@ const PortfolioPage = () => {
             </div>
             <div className='videographyScene'>
                 <h2>VIDEOGRAPHY</h2>
-                <Project title='Reveal Video'
-                        description='Full House inspired class reveal video'
-                        link='https://www.instagram.com/reel/CH_MO4tni4A/'
-                        photo= {revealVideo} />
-                 <Project title='DPO 2020 Recruitment Video'
-                        description='Video inspired by the exarcebated digital dependance due to COVID-19'
-                        link='https://www.instagram.com/p/CE7_xAABfiu/'
-                        photo= {recruitmentVideo} />
+                <div className='projectDisplay'>
+                    <Project title='Reveal Video'
+                            description='Full House inspired class reveal video'
+                            link='https://www.instagram.com/reel/CH_MO4tni4A/'
+                            photo= {revealVideo} />
+                    <Project title='DPO 2020 Recruitment Video'
+                            description='Video inspired by the exarcebated digital dependance due to COVID-19'
+                            link='https://www.instagram.com/p/CE7_xAABfiu/'
+                            photo= {recruitmentVideo} />
+                </div>
                 
-            </div>
+            </div> 
             <div className='photographyScene'> 
                 <h2>PHOTOGRAPHY</h2>
             </div>
