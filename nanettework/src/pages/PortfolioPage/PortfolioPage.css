@@ -18,6 +18,16 @@
     background-color: #e7e7e7;
 }
 
+.codingIcons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.codingIcon:hover {
+    color: #00ffff;
+    animation: 'jello-horizontal' 0.6s both;
+}
+
 .codingScene .projectDisplay {
     display: flex;
     flex-direction: row;

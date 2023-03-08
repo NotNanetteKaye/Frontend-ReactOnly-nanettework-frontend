@@ -9,7 +9,6 @@ import 'react-multi-carousel/lib/styles.css';
 import '../PortfolioPage/PortfolioPage.css';
 
 import React from 'react';
-import Carousel from 'react-elastic-carousel';
 import { FaReact, FaPython, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 import { SiDjango, SiJavascript } from 'react-icons/si';
 import { motion } from "framer-motion";
@@ -50,13 +49,31 @@ const PortfolioPage = () => {
         <div className='portfolioPageLayout'>
             <div className='portfolioHeaderTitle'>
                 <h1>PORTFOLIO</h1>
-                <div className='Carousel'>
+                <div className='codingIcons'>
+                    <div className='codingIcon'>
                         <FaReact size={100} />
+                        <h3>React</h3>
+                    </div>
+                    <div className='codingIcon'>
                         <FaPython size={100} />
+                        <h3>Python</h3>
+                    </div>
+                    <div className='codingIcon'>
                         <FaHtml5 size={100}/>
+                        <h3>HTML5</h3>
+                    </div>
+                    <div className='codingIcon'>
                         <FaCss3Alt size={100} />
+                        <h3>CSS</h3>
+                    </div>
+                    <div className='codingIcon'>
                         <SiDjango size={100} />
-                        <SiJavascript size={100} />
+                        <h3>Django</h3>
+                    </div>
+                    <div className='codingIcon'>
+                    <SiJavascript size={100} />
+                    <h3>JavaScript</h3>
+                    </div>
                 </div>
             </div>
             <div className='codingScene'>
