@@ -7,8 +7,6 @@ import '../AboutPage/AboutPage.css';
 const AboutPage = () => {
     return (
         <div className='aboutLayout'>
-          <div className='headerWithTitleAbout'>
-          </div>
           <div className='bio'>
           </div>
           <div className='footerPic'>
