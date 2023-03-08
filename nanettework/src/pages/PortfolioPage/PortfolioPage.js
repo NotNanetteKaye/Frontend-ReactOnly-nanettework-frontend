@@ -1,6 +1,8 @@
  // Image Imports
-import darlingDreams from '../../coding_images/capstoneImage.png';
-import youtubeClone from '../../coding_images/youtubeclone.png';
+import darlingDreams from '../../portfolio_images/capstoneImage.png';
+import youtubeClone from '../../portfolio_images/youtubeclone.png';
+import recruitmentVideo from '../../portfolio_images/horizontalVideo.png';
+import revealVideo from '../../portfolio_images/verticalVideo.png';
 
 // CSS Imports
 import 'react-multi-carousel/lib/styles.css';
@@ -83,6 +85,15 @@ const PortfolioPage = () => {
             </div>
             <div className='videographyScene'>
                 <h2>VIDEOGRAPHY</h2>
+                <Project title='Reveal Video'
+                        description='Full House inspired class reveal video'
+                        link='https://www.instagram.com/reel/CH_MO4tni4A/'
+                        photo= {revealVideo} />
+                 <Project title='DPO 2020 Recruitment Video'
+                        description='Video inspired by the exarcebated digital dependance due to COVID-19'
+                        link='https://www.instagram.com/p/CE7_xAABfiu/'
+                        photo= {recruitmentVideo} />
+                
             </div>
             <div className='photographyScene'> 
                 <h2>PHOTOGRAPHY</h2>
