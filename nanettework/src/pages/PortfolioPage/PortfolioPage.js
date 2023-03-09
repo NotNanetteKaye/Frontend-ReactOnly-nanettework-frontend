@@ -53,7 +53,9 @@ const PortfolioPage = () => {
                 <h2>Check out my past projects here!</h2>
                 <h1>SKILLS</h1>
                 <div className='codingIcons'>
-
+                    <div className='codingIcon'>
+                        <h6>Need to add MySQL here.</h6>
+                    </div>
                     <div className='codingIcon'>
                         <FaReact size={100} />
                         <h3>React</h3>
