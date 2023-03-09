@@ -87,24 +87,30 @@ const PortfolioPage = () => {
                         description='Find black/brown artists & entrepreneurs in Texas'
                         link='https://github.com/NotNanetteKaye/capstone2022'
                         photo= {darlingDreams} />
+                    </motion.div>
+                    <motion.div>
                         <Project title='Youtube Minus the Ads'
-                        description='A video player full-stack application utilizing the YoutubeAPI with user ability to leave comments'
-                        link='https://github.com/NotNanetteKaye/youtube-clone'
-                        photo = {youtubeClone} />
+                            description='A video player full-stack application utilizing the YoutubeAPI with user ability to leave comments'
+                            link='https://github.com/NotNanetteKaye/youtube-clone'
+                            photo = {youtubeClone} />
                     </motion.div>
                 </div>
             </div>
             <div className='videographyScene'>
                 <h1>VIDEOGRAPHY</h1>
                 <div className='projectDisplay'>
-                    <Project title='Reveal Video'
+                    <motion.div>
+                        <Project title='Reveal Video'
                             description='Full House inspired class reveal video'
                             link='https://www.instagram.com/reel/CH_MO4tni4A/'
                             photo= {revealVideo} />
-                    <Project title='DPO 2020 Recruitment Video'
+                    </motion.div>
+                    <motion.div>
+                        <Project title='DPO 2020 Recruitment Video'
                             description='Video inspired by the exarcebated digital dependance due to COVID-19'
                             link='https://www.instagram.com/p/CE7_xAABfiu/'
                             photo= {recruitmentVideo} />
+                    </motion.div>
                 </div>
                 
             </div> 
