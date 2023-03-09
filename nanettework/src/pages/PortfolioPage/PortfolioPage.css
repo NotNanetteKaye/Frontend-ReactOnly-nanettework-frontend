@@ -8,6 +8,19 @@
     "photographyScene"
 }
 
+.portfolioPageLayout h1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10mm;
+}
+
+.portfolioPageLayout h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .portfolioHeaderTitle {
     width: 100%;
     background-color: #e7e7e7;
@@ -21,6 +34,7 @@
 .codingIcons {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .codingIcon:hover {

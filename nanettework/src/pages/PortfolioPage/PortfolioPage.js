@@ -49,7 +49,10 @@ const PortfolioPage = () => {
         <div className='portfolioPageLayout'>
             <div className='portfolioHeaderTitle'>
                 <h1>PORTFOLIO</h1>
+                <h2>Check out my past projects here!</h2>
+                <h1>SKILLS</h1>
                 <div className='codingIcons'>
+
                     <div className='codingIcon'>
                         <FaReact size={100} />
                         <h3>React</h3>
@@ -77,7 +80,7 @@ const PortfolioPage = () => {
                 </div>
             </div>
             <div className='codingScene'>
-                <h2>CODING PROJECTS</h2>
+                <h1>CODING PROJECTS</h1>
                 <div className='projectDisplay'>
                     <motion.div>
                         <Project title='Darling Dreams'
@@ -92,7 +95,7 @@ const PortfolioPage = () => {
                 </div>
             </div>
             <div className='videographyScene'>
-                <h2>VIDEOGRAPHY</h2>
+                <h1>VIDEOGRAPHY</h1>
                 <div className='projectDisplay'>
                     <Project title='Reveal Video'
                             description='Full House inspired class reveal video'
@@ -106,7 +109,7 @@ const PortfolioPage = () => {
                 
             </div> 
             <div className='photographyScene'> 
-                <h2>PHOTOGRAPHY</h2>
+                <h1>PHOTOGRAPHY</h1>
             </div>
         </div>
     )
