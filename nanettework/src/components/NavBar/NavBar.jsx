@@ -59,7 +59,7 @@ export default function NavBar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const show = window.scrollY > 600
+            const show = window.scrollY > 30
             if (show) {
                 setNavBackground('appBarSolid')
             } else {
