@@ -12,6 +12,7 @@ import React from 'react';
 import { FaReact, FaPython, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 import { SiDjango, SiJavascript } from 'react-icons/si';
 import { motion } from "framer-motion";
+import Footer from '../../components/Footer/Footer';
 
 
 // carousel tutorial to follow: https://www.youtube.com/watch?v=R5O5lLIph9Y
@@ -114,9 +115,7 @@ const PortfolioPage = () => {
                 </div>
                 
             </div> 
-            <div className='photographyScene'> 
-                <h1>PHOTOGRAPHY</h1>
-            </div>
+            <Footer />
         </div>
     )
 }
