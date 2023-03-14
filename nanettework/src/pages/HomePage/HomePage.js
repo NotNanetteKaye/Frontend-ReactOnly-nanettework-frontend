@@ -8,8 +8,12 @@ import Footer from '../../components/Footer/Footer'
 const HomePage = () => {
     return (
         <div className='NKDLayout'>
-          <div className='headerWithTitle'>
+          <div className='headerImage'>
+            <div id='fixed'></div>
+            <div id='remainingSpace'></div>
           </div>
+
+
           <div className='about'>
             <div className='aboutImage'>
             </div>

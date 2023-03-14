@@ -1,24 +1,30 @@
 .NKDLayout {
-    background-color: white;
     display: grid;
     grid-template-areas: 
-    "headerWithTitle"
+    "headerImage"
     "about"
-    "footer"
 }
   
-.headerWithTitle{
+.headerImage{
     margin-top: -20mm;
     grid-area: 'headerWithTitle';
     background-image: url(../../../public/images/nanifrontpic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 740px;
-    width: auto;
+    width: 100%;
     color: white;
     display: grid;
     grid-template-rows: repeat(2, minmax(300px, auto));
     font-size: 20mm;
+}
+
+.headerImage #fixed {
+
+}
+
+.headerImage #remainingSpace {
+
 }
   
 .about {
