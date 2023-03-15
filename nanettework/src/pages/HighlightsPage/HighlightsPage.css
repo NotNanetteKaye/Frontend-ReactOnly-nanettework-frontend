@@ -25,12 +25,9 @@
     grid-area: 'bio';
     background-size: cover;
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, auto));
     background-color: #e7e7e7;
     height: 750px;
-    width: 110%;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(300px, auto));
+    width: 100%;
   }
   
   .footerPic {

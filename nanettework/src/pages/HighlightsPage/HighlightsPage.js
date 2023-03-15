@@ -15,8 +15,6 @@ const HighlightsPage = () => {
           </div>
           <div className='bio'>
           </div>
-          <div className='footerPic'>
-          </div>
         </div>
       );
 }
