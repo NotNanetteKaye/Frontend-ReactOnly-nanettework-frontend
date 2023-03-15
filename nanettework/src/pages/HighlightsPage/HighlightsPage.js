@@ -3,12 +3,15 @@ import React from "react";
 import './HighlightsPage.css';
 
 
-
+// 🤔: add motion to 'HEADINGS'
+// 🤔: fix format of the h2 & h3
+// 🤔: hyperlink elements of H3 to respective articles
+// 🤔: import Footer component
 const HighlightsPage = () => {
     return (
         <div className='aboutLayout'>
           <div className='headerWithTitleAbout'>
-            <div></div>
+            <div></div> 
             <div>
               <h3 style={{display: 'flex', flexDirection: 'column', flexWrap: 'wrap', alignContent: 'space-around', marginLeft: '20mm', textShadow: '#0000003d 1px 0 10px', color: '#e7e7e7'}}>HIGHLIGHTS</h3>
             </div>
