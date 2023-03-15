@@ -7,6 +7,7 @@ import './HighlightsPage.css';
 const HighlightsPage = () => {
     return (
         <div className='aboutLayout'>
+          <div className='headerWithTitleAbout'></div>
           <div className='bio'>
           </div>
           <div className='footerPic'>
