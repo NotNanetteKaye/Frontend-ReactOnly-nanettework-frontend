@@ -77,7 +77,7 @@ export default function NavBar() {
             <AppBar position='fixed' className={classes[navRef.current]} elevation={0} >
                 <Toolbar>
                     <Button onClick={() => navigate('/portfolio')}>Portfolio</Button>
-                    <Button onClick={() => navigate('')}>Highlights</Button>
+                    <Button onClick={() => navigate('/highlights')}>Highlights</Button>
                     <a className={classes.title} href='http://localhost:3000/nanettekayedolera'>
                         NANETTE KAYE DOLERA
                     </a>
