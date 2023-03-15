@@ -1,10 +1,10 @@
 // General Imports
 import React from "react";
-import '../AboutPage/AboutPage.css';
+import './HighlightsPage.css';
 
 
 
-const AboutPage = () => {
+const HighlightsPage = () => {
     return (
         <div className='aboutLayout'>
           <div className='bio'>
@@ -15,4 +15,4 @@ const AboutPage = () => {
       );
 }
  
-export default AboutPage;
+export default HighlightsPage;
