@@ -22,9 +22,7 @@
   }
   
   .bio {
-    grid-area: 'bio';
     background-size: cover;
-    display: grid;
     background-color: #e7e7e7;
     height: 750px;
     width: 100%;
