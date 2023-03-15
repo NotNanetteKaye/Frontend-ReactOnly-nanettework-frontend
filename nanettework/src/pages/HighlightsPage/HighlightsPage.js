@@ -24,6 +24,8 @@ const HighlightsPage = () => {
             <h3>I was featured in a video during TTU's 2021 Women's Herstory Month. I love being a woman.</h3>
             <h2>2020</h2>
             <h3>When the coronies happened 😵‍💫. Nevertheless, I made sure celebrations of culture still continued - even if that meant for the entire experience to be online.</h3>
+            <h2>20__</h2>
+            <h3>Learned at a very young age the importance of excellence when I had my Serena Williams moment of being the MVP for my tennis team. </h3>
           </div>
         </div>
       );
