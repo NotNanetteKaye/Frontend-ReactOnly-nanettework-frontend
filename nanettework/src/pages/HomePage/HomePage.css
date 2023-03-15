@@ -8,68 +8,57 @@
 .headerImage{
     margin-top: -20mm;
     grid-area: 'headerWithTitle';
-    background-image: url(../../../public/images/nanifrontpic.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 740px;
-    width: 100%;
-    color: white;
     display: grid;
-    grid-template-rows: repeat(2, minmax(300px, auto));
-    font-size: 20mm;
+    grid-template-columns: 100% 2.3% ;
 }
-
 .headerImage #fixed {
-
+    background-image: url('../../../public/images/nanifrontpic.jpg');
+    background-size: cover;
+    width: 100%;
 }
-
 .headerImage #remainingSpace {
+    background-image: url('../../../public/images/nanifrontpic.jpg');
+    background-size: cover;
+    width: 100%;
 
 }
+/* 🤔: Need to flip image */
   
 .about {
     grid-area: 'about';
-    background-size: cover;
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, auto));
+    grid-template-columns: 50% 32.3%;
     background-color: #e7e7e7;
     height: 750px;
-    width: 110%;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(300px, auto));
 }
-  
-.about .aboutImage {
-    grid-area: 'about';
+.about #image {
     background-image: url(../../../public/images/naniAboutNoColorBlock.png);
-    background-repeat: no-repeat;
     background-size: contain;
-    margin-left: 10mm;
+    background-repeat: no-repeat;
     margin-top: 10mm;
+    margin-left: 10mm;
 }
-  
-.about .aboutWords {
-    width: 450px;
+.about #words {
     margin-top: 50mm;
-    margin-left: 20mm;
+    margin-left: 3mm;
     background-color: #e7e7e7;
+    width: 100%;
 }
   
 .about h1 {
     font: italic bold 12mm Georgia, Times, "Times New Roman", serif;
-}
-  
+}  
 .about h5 {
     font-size: 8mm;
     margin-top: 5mm;
     font: 1em Georgia, Times, "Times New Roman", serif;
 }
-
 .NKDLayout .about .aboutWords .resumeButton {
     margin-top: 5mm;
 }
 
-
+/* button styling */
 .NKDLayout .about .aboutWords div a {
     color: '#e7e7e7';
     background-image: linear-gradient(#dddddd, #c7c5c5);

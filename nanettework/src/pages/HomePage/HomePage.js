@@ -1,9 +1,10 @@
-// General imports
+// General Imports
 import React from 'react';
 import '../HomePage/HomePage.css';
+
+// Component Imports
 import Footer from '../../components/Footer/Footer'
 
-// Component imports
 
 const HomePage = () => {
     return (
@@ -12,12 +13,11 @@ const HomePage = () => {
             <div id='fixed'></div>
             <div id='remainingSpace'></div>
           </div>
-
-
+          
           <div className='about'>
-            <div className='aboutImage'>
-            </div>
-            <div className='aboutWords'>
+            <div id='image'></div>
+            <div id='words'>
+              <div className='aboutWords'>
               <h1>Mabuhay, I am Nanette!</h1>
               <h5>My name is Nanette (she/her/siya), and I am happy you are here. Raised by a healthcare hero mama and sailor papa, my values remain firm in pursuing a lifestyle that advocates for others while forging my own unforgettable adventures.</h5>
               <h5>From a young age, I deeply admired the arts. I see beauty in everything around me and want to encourage others to bask in life's delights.</h5>
@@ -30,8 +30,11 @@ const HomePage = () => {
                resume!
                 </a>
               </div>
+              </div>
             </div>
           </div>
+
+
           <Footer/>
         </div>
       );
