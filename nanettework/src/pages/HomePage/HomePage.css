@@ -4,7 +4,9 @@
     "headerImage"
     "about"
 }
-  
+ 
+
+/* header section styling */
 .headerImage{
     margin-top: -20mm;
     grid-area: 'headerWithTitle';
@@ -25,6 +27,8 @@
 }
 /* 🤔: Need to flip image */
   
+
+/* about section styling */
 .about {
     grid-area: 'about';
     display: grid;
@@ -44,8 +48,7 @@
     margin-left: 3mm;
     background-color: #e7e7e7;
     width: 100%;
-}
-  
+}  
 .about h1 {
     font: italic bold 12mm Georgia, Times, "Times New Roman", serif;
 }  
@@ -54,11 +57,12 @@
     margin-top: 5mm;
     font: 1em Georgia, Times, "Times New Roman", serif;
 }
+
+
+/* button styling */
 .NKDLayout .about .aboutWords .resumeButton {
     margin-top: 5mm;
 }
-
-/* button styling */
 .NKDLayout .about .aboutWords div a {
     color: '#e7e7e7';
     background-image: linear-gradient(#dddddd, #c7c5c5);
