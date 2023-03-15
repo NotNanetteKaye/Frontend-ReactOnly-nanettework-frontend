@@ -21,6 +21,9 @@ const HighlightsPage = () => {
             <h2>2021</h2>
             <h3>I had my first Oprah moment during the annual First Generation Week where I got to interview the TTU Honors College Dean!</h3>
             <h3>I co-lead LatinX/Hispanic Heritage Month alongside one of the best humans I met during my time at Texas Tech University. Check us out here :)) </h3>
+            <h3>I was featured in a video during TTU's 2021 Women's Herstory Month. I love being a woman.</h3>
+            <h2>2020</h2>
+            <h3>When the coronies happened 😵‍💫. Nevertheless, I made sure celebrations of culture still continued - even if that meant for the entire experience to be online.</h3>
           </div>
         </div>
       );
