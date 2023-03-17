@@ -1,6 +1,7 @@
 // General Imports
 import React from "react";
 import './HighlightsPage.css';
+import Footer from '../../components/Footer/Footer'
 
 
 // 🤔: add motion to 'HEADINGS'
@@ -32,6 +33,7 @@ const HighlightsPage = () => {
               <h3>Learned at a very young age the importance of excellence when I had my Serena Williams moment of being the MVP for my tennis team. </h3>
             </div>
           </div>
+          <Footer />
         </div>
       );
 }
