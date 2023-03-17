@@ -13,7 +13,7 @@
   background-image: url(../../../public/images/Highlights1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 750px;
+  height: 700px;
   width: auto;
   color: white;
   display: grid;
@@ -24,7 +24,7 @@
 .bio {
   background-size: cover;
   background-color: #e7e7e7;
-  height: 750px;
+  height: 670px;
   width: 100%;
 }
 
