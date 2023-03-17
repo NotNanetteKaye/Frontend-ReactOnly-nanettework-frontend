@@ -26,10 +26,14 @@
     background-color: #e7e7e7;
     height: 750px;
     width: 100%;
+  }
+
+  .bio .words {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-content: flex-end;
+    padding: 15mm;
   }
   
   .footerPic {
