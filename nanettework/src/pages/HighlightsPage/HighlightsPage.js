@@ -7,7 +7,6 @@ import Footer from '../../components/Footer/Footer'
 // 🤔: add motion to 'HEADINGS'
 // 🤔: fix format of the h2 & h3
 // 🤔: hyperlink elements of H3 to respective articles
-// 🤔: import Footer component
 const HighlightsPage = () => {
     return (
         <div className='aboutLayout'>
