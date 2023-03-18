@@ -46,7 +46,7 @@
 .bio {
   background-size: cover;
   background-color: #e7e7e7;
-  height: 700px;
+  height: 600px;
   width: 100%;
 }
 
@@ -56,14 +56,14 @@
   flex-wrap: wrap;
   align-content: space-around;
 }
-.bio .words h3 {
+.bio .words li {
   font-size: 8mm;
-  margin-top: 4mm;
+  margin-top: 2mm;
   font: 1em Georgia, Times, "Times New Roman", serif;
 }
 .bio .words h2 {
-  font-size: 10mm;
-  margin-top: 5mm;
+  font-size: 8.5mm;
+  margin-top: 4mm;
 }
 .bio .words a {
   color: black;
