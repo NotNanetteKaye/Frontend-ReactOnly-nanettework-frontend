@@ -29,13 +29,12 @@
 }
 
 .headerWithTitleAbout .headerTitle h3 {
-  animation-name: slideInLeft;
-  animation-duration: 2s;
+  animation: slideInLeft 1s ease-in
 }
 
 @keyframes slideInLeft {
   from {
-    transform: translateX(-300px);
+    transform: translateX(-100px);
   } 
   to {
     transform: translateX(0);
