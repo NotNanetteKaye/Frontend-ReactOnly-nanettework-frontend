@@ -8,12 +8,12 @@
 }
   
 .headerWithTitleAbout {
-  margin-top: -18mm;
+  margin-top: -20mm;
   grid-area: 'headerWithTitleAbout';
-  background-image: url(../../../public/images/Highlights1.jpg);
+  background-image: url(../../../public/images/right.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+  height: 740px;
   width: auto;
   color: white;
   display: grid;
@@ -27,6 +27,21 @@
   align-content: center;
   justify-content: space-around;
 }
+
+.headerWithTitleAbout .headerTitle h3 {
+  animation-name: slideInLeft;
+  animation-duration: 2s;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  } 
+  to {
+    transform: translateX(0);
+  }
+}
+
   
 .bio {
   background-size: cover;
