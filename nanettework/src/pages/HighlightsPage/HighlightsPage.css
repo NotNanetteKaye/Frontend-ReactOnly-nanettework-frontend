@@ -41,7 +41,8 @@
   animation: slideInLeft 1s ease-in
 }
 
-  
+
+/* Highlight Page Words */
 .bio {
   background-size: cover;
   background-color: #e7e7e7;
@@ -55,28 +56,21 @@
   flex-wrap: wrap;
   align-content: space-around;
 }
-
 .bio .words h3 {
   font-size: 8mm;
   margin-top: 4mm;
   font: 1em Georgia, Times, "Times New Roman", serif;
 }
-
 .bio .words h2 {
   font-size: 10mm;
   margin-top: 5mm;
 }
-
-.footerPic {
-  grid-area: 'headerWithTitleAbout';
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 750px;
-  margin-top: -20mm;
-  width: auto;
-  color: white;
-  display: grid;
-  grid-template-rows: repeat(2, minmax(300px, auto));
-  font-size: 20mm;
+.bio .words a {
+  color: black;
+}
+.bio .words a:hover {
+  text-shadow: #e7c895 1px 0 10px;
+  color:rgb(150, 90, 90);
+  transition: ease-in;
 }
   
