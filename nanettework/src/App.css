@@ -10,9 +10,6 @@ ul {
   list-style-type: none;
 }
 
-a {
-  text-decoration: none;
-}
 
 @media only screen and (max-width: 800px) and (min-width: 768px) {
   html, body {
@@ -35,3 +32,8 @@ a {
 
   /* watch when you're not mad: https://www.youtube.com/watch?v=bMZ1WQg_UFM */
 }
+
+/* a {
+  text-decoration: none;
+}
+*/
