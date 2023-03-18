@@ -11,7 +11,7 @@ const HighlightsPage = () => {
         <div className='aboutLayout'>
           <div className='headerWithTitleAbout'>
             <div className='headerTitle'>
-              <h3 style={{textShadow: '#0000003d 1px 0 10px', color: '#e7e7e7'}}>HIGHLIGHTS</h3>
+              <h3 class='slideInLeft' style={{textShadow: '#0000003d 1px 0 10px', color: '#e7e7e7'}}>HIGHLIGHTS</h3>
             </div>
           </div>
           <div className='bio'>

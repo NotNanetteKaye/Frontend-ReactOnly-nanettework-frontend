@@ -28,10 +28,6 @@
   justify-content: space-around;
 }
 
-.headerWithTitleAbout .headerTitle h3 {
-  animation: slideInLeft 1s ease-in
-}
-
 @keyframes slideInLeft {
   from {
     transform: translateX(-100px);
@@ -39,6 +35,10 @@
   to {
     transform: translateX(0);
   }
+}
+
+.slideInLeft {
+  animation: slideInLeft 1s ease-in
 }
 
   
