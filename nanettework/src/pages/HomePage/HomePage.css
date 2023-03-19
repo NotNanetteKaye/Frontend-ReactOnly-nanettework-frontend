@@ -62,17 +62,23 @@
 /* button styling */
 .NKDLayout .about .aboutWords .resumeButton {
     margin-top: 5mm;
+    text-decoration: none;
+    color: black
 }
 .NKDLayout .about .aboutWords div a {
-    color: '#e7e7e7';
+    color: black;
     background-image: linear-gradient(#dddddd, #c7c5c5);
     padding: 2mm;
+    border-radius: 2mm;
     border-color: '#b2aba9';
     border-style: 'solid';
+    text-decoration: none
 
 }
 .NKDLayout .about .aboutWords div a:hover {
     cursor: pointer;
     background-image: linear-gradient(#b5b385, #807e1a);
+    text-decoration: none;
+    color: black;
 }
   

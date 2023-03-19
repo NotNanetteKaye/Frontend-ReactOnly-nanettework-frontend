@@ -25,8 +25,7 @@ const HomePage = () => {
               <div className='resumeButton'>
                 <a href=''
               target="_blank"
-              rel="noreferrer"
-              style={{borderRadius: '2mm', color: 'black'}}>
+              rel="noreferrer">
                resume!
                 </a>
               </div>
