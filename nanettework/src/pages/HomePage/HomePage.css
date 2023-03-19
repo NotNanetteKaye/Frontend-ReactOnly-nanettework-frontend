@@ -72,7 +72,8 @@
     border-radius: 2mm;
     border-color: '#b2aba9';
     border-style: 'solid';
-    text-decoration: none
+    text-decoration: none;
+    transition: 0.3s;
 
 }
 .NKDLayout .about .aboutWords div a:hover {
@@ -80,5 +81,6 @@
     background-image: linear-gradient(#b5b385, #807e1a);
     text-decoration: none;
     color: black;
+    box-shadow: #807e1a 7px 10px 55px;
 }
   
