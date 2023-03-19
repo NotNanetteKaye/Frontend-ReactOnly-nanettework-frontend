@@ -67,6 +67,7 @@
 }
 .bio .words a {
   color: black;
+  transition: 1s;
 }
 .bio .words a:hover {
   text-shadow: #e7c895 1px 0 10px;
