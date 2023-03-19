@@ -84,12 +84,16 @@ export default function NavBar() {
                     <ul className={classes.icons}>
                         <li>
                             <a href='https://www.linkedin.com/in/nanettekayedolera/'
-                                className=''>
+                                className=''
+                                target="_blank"
+                                rel="noreferrer">
                                 <FaLinkedin size={26} color='black'/>
                             </a>
                         </li>
                         <li>
                             <a href='https://github.com/NotNanetteKaye'
+                                target="_blank"
+                                rel="noreferrer"
                                 className=''>
                                 <FaGithub size={26} color='black'/>
                             </a>
