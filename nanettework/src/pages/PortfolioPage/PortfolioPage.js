@@ -46,8 +46,11 @@ const PortfolioPage = () => {
     return(
         <div className='portfolioPageLayout'>
             <div className='portfolioSkills'>
-                <h1>SKILLS</h1>
-                <div className='codingIcons'>
+                <motion.div variants={projectVariant}
+                initial= 'hidden'
+                animate='visible'>
+                    <h1>SKILLS</h1>
+                    <div className='codingIcons'>
                     <div className='codingIcon'>
                         <SiMysql size={100} />
                         <h3>MySQL</h3>
@@ -76,11 +79,16 @@ const PortfolioPage = () => {
                     <SiJavascript size={100} />
                     <h3>JavaScript</h3>
                     </div>
-                </div>
+                    </div>
+                </motion.div>
                 
             </div>
             <div className='codingScene'>
-                <h1>CODING PROJECTS</h1>
+                <motion.div variants={projectVariant}
+                initial= 'hidden'
+                animate='visible'>
+                    <h1>CODING PROJECTS</h1>
+                </motion.div>
                 <div className='projectDisplay'>
                     <motion.div>
                         <Project title='Darling Dreams (2023 Capstone)'
@@ -97,7 +105,11 @@ const PortfolioPage = () => {
                 </div>
             </div>
             <div className='videographyScene'>
-                <h1>VIDEOGRAPHY</h1>
+                <motion.div variants={projectVariant}
+                initial= 'hidden'
+                animate='visible'>
+                    <h1>VIDEOGRAPHY</h1>
+                </motion.div>
                 <div className='projectDisplay'>
                     <motion.div>
                         <Project title='Delta Phi Omega 2020 Fall Class Reveal Video'
