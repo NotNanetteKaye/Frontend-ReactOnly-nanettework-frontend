@@ -7,6 +7,7 @@ import Footer from '../../components/Footer/Footer'
 
 // TO-DO'S
 // 🤔: properly link resume button to resume
+// 🤔: Logo for personal portfolio
 const HomePage = () => {
     return (
         <div className='NKDLayout'>
