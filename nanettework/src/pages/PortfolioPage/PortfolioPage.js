@@ -10,13 +10,10 @@ import '../PortfolioPage/PortfolioPage.css';
 
 import React from 'react';
 import { FaReact, FaPython, FaHtml5, FaCss3Alt } from 'react-icons/fa';
-import { SiDjango, SiJavascript } from 'react-icons/si';
+import { SiDjango, SiJavascript, SiMysql } from 'react-icons/si';
 import { motion } from "framer-motion";
 import Footer from '../../components/Footer/Footer';
 
-
-// carousel tutorial to follow: https://www.youtube.com/watch?v=R5O5lLIph9Y
-// carousel-elastic: https://www.npmjs.com/package/react-elastic-carousel
 
 const projectVariant = {
     hidden: { opacity: 0, scale: 0.8 },
@@ -48,13 +45,12 @@ const Project = ({ title, description, link, photo }) => {
 const PortfolioPage = () => {
     return(
         <div className='portfolioPageLayout'>
-            <div className='portfolioHeaderTitle'>
-                <h1>PORTFOLIO</h1>
-                <h2>Check out my past projects here!</h2>
+            <div className='portfolioSkills'>
                 <h1>SKILLS</h1>
                 <div className='codingIcons'>
                     <div className='codingIcon'>
-                        <h6>Need to add MySQL here.</h6>
+                        <SiMysql size={100} />
+                        <h3>MySQL</h3>
                     </div>
                     <div className='codingIcon'>
                         <FaReact size={100} />
@@ -81,6 +77,7 @@ const PortfolioPage = () => {
                     <h3>JavaScript</h3>
                     </div>
                 </div>
+                
             </div>
             <div className='codingScene'>
                 <h1>CODING PROJECTS</h1>
