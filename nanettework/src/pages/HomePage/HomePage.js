@@ -5,7 +5,8 @@ import '../HomePage/HomePage.css';
 // Component Imports
 import Footer from '../../components/Footer/Footer'
 
-
+// TO-DO'S
+// 🤔: properly link resume button to resume
 const HomePage = () => {
     return (
         <div className='NKDLayout'>

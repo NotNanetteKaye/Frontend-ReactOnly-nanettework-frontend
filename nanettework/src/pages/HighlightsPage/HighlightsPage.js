@@ -3,6 +3,9 @@ import React from "react";
 import './HighlightsPage.css';
 import Footer from '../../components/Footer/Footer'
 
+// TO-DOs
+// 🤔: Edit words
+
 const HighlightsPage = () => {
     return (
         <div className='aboutLayout'>
