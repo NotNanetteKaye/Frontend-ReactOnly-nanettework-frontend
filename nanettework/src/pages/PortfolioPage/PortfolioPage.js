@@ -17,7 +17,7 @@ import Footer from '../../components/Footer/Footer';
 
 const projectVariant = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1, transition: {type: 'spring', delay: .6}},
+    visible: { opacity: 1, scale: 1, transition: {type: 'spring', delay: .5}},
 };
 
 const Project = ({ title, description, link, photo }) => {
