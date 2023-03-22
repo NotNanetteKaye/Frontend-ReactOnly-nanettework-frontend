@@ -6,7 +6,7 @@
 }
  
 /* header section styling mobile */
-@media (min-width: 600px) {
+@media (min-width: 300px) {
     .headerImage{
         grid-area: 'headerWithTitle';
         margin-top: -20mm;
@@ -14,44 +14,42 @@
     }
 }
 
-/* about section styling */
-.about {
-    grid-area: 'about';
-    display: grid;
-    grid-template-columns: 50% 32.3%;
-    background-color: #e7e7e7;
-    height: 750px;
-}
-.about #image {
-    background-image: url(../../../public/images/naniAboutNoColorBlock.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 10mm;
-    margin-left: 10mm;
-}
-.about #words {
-    margin-top: 50mm;
-    margin-left: 3mm;
-    background-color: #e7e7e7;
-    width: 100%;
-}  
-.about h1 {
-    font: italic bold 12mm Georgia, Times, "Times New Roman", serif;
-}  
-.about h5 {
-    font-size: 8mm;
-    margin-top: 5mm;
-    font: 1em Georgia, Times, "Times New Roman", serif;
-}
+/* about section styling mobile */
+@media (min-width: 300px) {
+    .about {
+        grid-area: 'about';
+        display: grid;
+        grid-template-columns: 50% 32.3%;
+        background-color: #e7e7e7;
+    }
+    .about #image {
+        background-image: url(../../../public/images/naniAboutNoColorBlock.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 10mm;
+        margin-left: 10mm;
+    }
+    .about #words {
+        margin-top: 10mm;
+        margin-left: 3mm;
+        background-color: #e7e7e7;
+        width: 100%;
+    }  
+    .about h1 {
+        font: italic bold 5mm Georgia, Times, "Times New Roman", serif;
+    }  
+    .about h5 {
+        margin-top: 5mm;
+        font: .5em Georgia, Times, "Times New Roman", serif;
+    }
 
-
-/* button styling */
-.NKDLayout .about .aboutWords .resumeButton {
+    /* button styling */
+    .NKDLayout .about .aboutWords .resumeButton {
     margin-top: 5mm;
     text-decoration: none;
     color: black
-}
-.NKDLayout .about .aboutWords div a {
+    }
+    .NKDLayout .about .aboutWords div a {
     color: black;
     background-image: linear-gradient(#dddddd, #c7c5c5);
     padding: 2mm;
@@ -59,14 +57,16 @@
     border-color: '#b2aba9';
     border-style: 'solid';
     text-decoration: none;
-    transition: 0.3s;
-
-}
-.NKDLayout .about .aboutWords div a:hover {
+    transition: 0.3s;   
+    }
+    .NKDLayout .about .aboutWords div a:hover {
     cursor: pointer;
     background-image: linear-gradient(#b5b385, #807e1a);
     text-decoration: none;
     color: black;
     box-shadow: #807e1a 7px 10px 55px;
+    }
+
 }
+
   
