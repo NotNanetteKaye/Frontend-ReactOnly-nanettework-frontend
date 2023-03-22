@@ -5,27 +5,14 @@
     "about"
 }
  
-
-/* header section styling */
-.headerImage{
-    margin-top: -20mm;
-    grid-area: 'headerWithTitle';
-    height: 740px;
-    display: grid;
-    grid-template-columns: 100% 2.3% ;
+/* header section styling mobile */
+@media (min-width: 600px) {
+    .headerImage{
+        grid-area: 'headerWithTitle';
+        margin-top: -20mm;
+        background-color: #e7e7e7;
+    }
 }
-.headerImage #fixed {
-    background-image: url('../../../public/images/nanifrontpic.jpg');
-    background-size: cover;
-    width: 100%;
-}
-.headerImage #remainingSpace {
-    background-image: url('../../../public/images/nanifrontpic.jpg');
-    background-size: cover;
-    width: 100%;
-
-}
-  
 
 /* about section styling */
 .about {

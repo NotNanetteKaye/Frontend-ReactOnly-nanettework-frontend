@@ -1,6 +1,7 @@
 // General Imports
 import React from 'react';
 import '../HomePage/HomePage.css';
+import nani from '../../portfolio_images/nanifrontpic.jpg'
 
 // Component Imports
 import Footer from '../../components/Footer/Footer'
@@ -11,8 +12,7 @@ const HomePage = () => {
     return (
         <div className='NKDLayout'>
           <div className='headerImage'>
-            <div id='fixed'></div>
-            <div id='remainingSpace'></div>
+            <img src={nani} alt='Nani' width={'100%'}/>
           </div>
           
           <div className='about'>
