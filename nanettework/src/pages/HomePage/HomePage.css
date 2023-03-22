@@ -26,33 +26,34 @@
         background-image: url(../../../public/images/naniAboutNoColorBlock.png);
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top: 10mm;
-        margin-left: 10mm;
+        margin-top: 25mm;
+        margin-left: 5mm;
     }
     .about #words {
-        margin-top: 10mm;
-        margin-left: 3mm;
+        margin-top: 12mm;
+        margin-left:6mm;
         background-color: #e7e7e7;
         width: 100%;
     }  
     .about h1 {
-        font: italic bold 5mm Georgia, Times, "Times New Roman", serif;
+        font: italic bold 5.5mm Georgia, Times, "Times New Roman", serif;
     }  
     .about h5 {
         margin-top: 5mm;
-        font: .5em Georgia, Times, "Times New Roman", serif;
+        font: .65em Georgia, Times, "Times New Roman", serif;
     }
 
     /* button styling */
     .NKDLayout .about .aboutWords .resumeButton {
     margin-top: 5mm;
     text-decoration: none;
-    color: black
+    color: black;
+    font-size: small;
     }
     .NKDLayout .about .aboutWords div a {
     color: black;
     background-image: linear-gradient(#dddddd, #c7c5c5);
-    padding: 2mm;
+    padding: 1mm;
     border-radius: 2mm;
     border-color: '#b2aba9';
     border-style: 'solid';
