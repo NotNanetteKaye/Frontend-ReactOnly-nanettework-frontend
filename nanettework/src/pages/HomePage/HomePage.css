@@ -5,7 +5,7 @@
     "about"
 }
  
-/* header section styling mobile */
+/* header section styling mobile */ 
 @media (min-width: 300px) {
     .headerImage{
         grid-area: 'headerWithTitle';
@@ -16,41 +16,41 @@
 
 /* about section styling mobile */
 @media (min-width: 300px) {
-    .about {
+    .aboutContainer {
         grid-area: 'about';
         display: grid;
         grid-template-columns: 50% 32.3%;
         background-color: #e7e7e7;
     }
-    .about #image {
+    .aboutContainer .imageContainer {
         background-image: url(../../../public/images/naniAboutNoColorBlock.png);
         background-size: contain;
         background-repeat: no-repeat;
         margin-top: 25mm;
         margin-left: 5mm;
     }
-    .about #words {
+    .about .wordsContainer {
         margin-top: 12mm;
         margin-left:6mm;
         background-color: #e7e7e7;
         width: 100%;
     }  
-    .about h1 {
+    .aboutContainer h1 {
         font: italic bold 5.5mm Georgia, Times, "Times New Roman", serif;
     }  
-    .about h5 {
+    .aboutContainer h5 {
         margin-top: 5mm;
         font: .65em Georgia, Times, "Times New Roman", serif;
     }
 
     /* button styling */
-    .NKDLayout .about .aboutWords .resumeButton {
+    .NKDLayout .aboutContainer #aboutWords #resumeButton {
     margin-top: 5mm;
     text-decoration: none;
     color: black;
     font-size: small;
     }
-    .NKDLayout .about .aboutWords div a {
+    .NKDLayout .aboutContainer #aboutWords div a {
     color: black;
     background-image: linear-gradient(#dddddd, #c7c5c5);
     padding: 1mm;
@@ -60,7 +60,7 @@
     text-decoration: none;
     transition: 0.3s;   
     }
-    .NKDLayout .about .aboutWords div a:hover {
+    .NKDLayout .aboutContainer #aboutWords div a:hover {
     cursor: pointer;
     background-image: linear-gradient(#b5b385, #807e1a);
     text-decoration: none;
