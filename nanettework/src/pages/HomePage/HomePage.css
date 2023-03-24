@@ -21,31 +21,30 @@
         display: grid;
         grid-template-columns: 50% 32.3%;
         background-color: #e7e7e7;
+        padding: 1.5em;
     }
     .aboutContainer .imageContainer {
         background-image: url(../../../public/images/naniAboutNoColorBlock.png);
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top: 25mm;
-        margin-left: 5mm;
+        margin-top: 6em;
+        margin-right: 1em;
     }
     .about .wordsContainer {
-        margin-top: 12mm;
-        margin-left:6mm;
         background-color: #e7e7e7;
         width: 100%;
     }  
     .aboutContainer h1 {
-        font: italic bold 5.5mm Georgia, Times, "Times New Roman", serif;
+        font: italic bold 1.5em Georgia, Times, "Times New Roman", serif;
     }  
     .aboutContainer h5 {
-        margin-top: 5mm;
+        margin-top: 1em;
         font: .65em Georgia, Times, "Times New Roman", serif;
     }
 
     /* button styling */
     .NKDLayout .aboutContainer #aboutWords #resumeButton {
-    margin-top: 5mm;
+    margin-top: 2em;
     text-decoration: none;
     color: black;
     font-size: small;
