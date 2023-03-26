@@ -6,16 +6,20 @@ import Button from '@material-ui/core/Button';
 import { useNavigate } from 'react-router-dom';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
+// TO DO:
+// need to go back and change link to <a> title tag when deploying
+
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
         height: '70px',
         backgroundColor: 'rgba(231, 231, 231, 1)',
+        fontSize: '1rem',
     },
     menuButton: {
         marginRight: theme.spacing(2),
         color: 'black',
-        fontFamily: 'Georgia, Times, "Times New Roman", serif'
+        fontFamily: 'Georgia, Times, "Times New Roman", serif',
     },
     title: {
         flexGrow: 1,
@@ -26,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
         flexWrap: 'wrap',
         justifyContent: 'space-around',
         fontWeight: 'bold',
-        fontSize: '32px',
         textShadow: '2px 2px 53px #e7e7e7',
         backgroundColor: 'transparent',
         textDecoration: 'none',
@@ -107,4 +110,3 @@ export default function NavBar() {
  
 
 // video tutorial followed: https://www.youtube.com/watch?v=_N41IcElkZo
-// 🟩 need to go back and change link to <a> title tag when deploying
