@@ -9,7 +9,7 @@
 @media (min-width: 300px) {
     .headerImage{
         grid-area: 'headerWithTitle';
-        margin-top: -20mm;
+        margin-top: -4.5em;
         background-color: #e7e7e7;
     }
 }
@@ -21,13 +21,13 @@
         display: grid;
         grid-template-columns: 50% 32.3%;
         background-color: #e7e7e7;
-        padding: 1.5em;
+        padding: 2em;
     }
     .aboutContainer .imageContainer {
         background-image: url(../../../public/images/naniAboutNoColorBlock.png);
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top: 6em;
+        margin-top: 3em;
         margin-right: 1em;
     }
     .about .wordsContainer {
